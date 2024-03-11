@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let chlp = [1,3,5]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className = "ResetPasswordDiv">
+        <h3 className='ResetDivTitle'>Reset your password</h3>
+        <p>Enter your email address and   we'll send you a link to get back into your account.</p>
+        <input type='email' placeholder='example@mail.com'/>
+        <button type='submit'> Send Link </button>
+      </div>
+      <h1> {chlp.map((x)=>(
+        <p>{x}</p>
+      ))}</h1>
     </div>
   );
 }
